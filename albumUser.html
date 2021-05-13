@@ -30,7 +30,7 @@
 </head>
 
 <body id="page-top">
-    
+  
     <!-- Page Wrapper -->
     <div id="wrapper">
 
@@ -42,7 +42,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3"> ADMIN </div>
+                <div class="sidebar-brand-text mx-3">ADMIN </div>
             </a>
 
             <!-- Divider -->
@@ -81,7 +81,7 @@
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="" data-toggle="collapse" data-target="#collapseUtilities"
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
                     <span>Chỉnh Sửa</span>
@@ -90,8 +90,8 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Thao Tác:</h6>
-                        <a class="collapse-item" href="album.html">Tải Bài Hát Lên</a>
-                        <a class="collapse-item" href="album.html">Xóa Bài Hát</a>
+                        <a class="collapse-item" href="./album.html">Tải Bài Hát Lên</a>
+                        <a class="collapse-item" href="./album.html">Xóa Bài Hát</a>
                         <a class="collapse-item" href="utilities-animation.html">Thông Tin Bài Hát</a>
                         <a class="collapse-item" href="utilities-other.html">Bài Hát Đã Thích</a>
                     </div>
@@ -370,246 +370,103 @@
                 <!-- End of Topbar -->
 
                 <!-- phần linh làm -->
-                <div class="container mt-5">
-                    <!-- âm nhạc for u  -->
-                    <div class="musicForU">
-                        <div class="topMusicTitle">
-                            <p><strong>Album hiện đang quản lý</strong></p>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-2 col-md-3">
-                                <div class="topMusicItem">
-                                    <div class="itemContainer">
-                                        <div class="item">
-                                            <img src="https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/1/8/8/e/188e45098127c7f75cc4b715bf01bcd6.jpg"
-                                                alt="" class="img-fluid">
-                                            <div class="opacity hide"></div>
-                                            <div class="actionContainer ">
-                                                <button class="btn btnTool hide"><i
-                                                        class="icon far fa-heart"></i></button>
-                                                <button class="btn btnTool hide"> <i
-                                                        class="icon fas fa-play"></i></button>
-                                                <button class="btn btnTool hide"><i
-                                                        class="icon fas fa-ellipsis-h"></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <p class="itemTitle"><strong>Top 100 Nhạc Rap Việt Nam Hay Nhất</strong></p>
+                <!-- album -->
+                <div class="container mt-5">s
+                    <div class="row">
+                        <!-- left -->
+                        <div class="col-4  text-center albumContainerLeft">
+                            <div class="albumImg">
+                                <img src="https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/2/7/0/6/2706df91bf6c35a1eae8a61d3fc04c9b.jpg" alt="">
+                            </div> 
+                            <h4>Quang Linh album </h4>
+                            <p>cập nhật :13/8/2021  </p>
+                            <p>100k yêu thích  </p>
+                            <button class="btn btn-cyan">TẠM DỪNG</button>
+                         </div>
+                        
+                        <!-- right -->
+                        <div class="col-6" id="album">
+                            <div class="addSong d-flex">
+                                <h4><strong>Thêm bài hát</strong></h4>
+                                <div class="addNewSong">
+                                    <input id="addnewsong_box" type="text">
+                                    <button id="btn_add">+</button>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-3">
-                                <div class="topMusicItem">
-                                    <div class="itemContainer">
-                                        <div class="item">
-                                            <img src="https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/6/1/0/f/610f6b9b6d694034c23e4ef48e4ad7b8.jpg"
-                                                alt="" class="img-fluid">
-                                            <div class="opacity hide"></div>
-                                            <div class="actionContainer ">
-                                                <button class="btn btnTool hide"><i
-                                                        class="icon far fa-heart"></i></button>
-                                                <button class="btn btnTool hide"> <i
-                                                        class="icon fas fa-play"></i></button>
-                                                <button class="btn btnTool hide"><i
-                                                        class="icon fas fa-ellipsis-h"></i></button>
-                                            </div>
+
+                            <div id="album_1">
+                                <ol class="listSong">
+                                    <li class="list_Item" >
+                                        <h6 class="listItem--title">
+                                             Lay la lay
+                                        </h6>
+                                        <span class="Time">4:00</span>
+                                        <div class="listTool" id="album_tool">
+                                            <a id="play_1" href="./src/mp3/Laylalay-JackG5R-7003742.mp3"><i
+                                                    class="fas fa-play"></i></a>
+                                            <a id="play_video" href=""><i class="fas fa-video"></i></a>
+                                            <a href=""><i class="fas fa-download"></i></a>
+                                            <a id="remove_song"><i class="fas fa-trash"></i></a>
                                         </div>
-                                    </div>
-
-
-                                    <p class="itemTitle"><strong>Top 100 Nhạc Rap Việt Nam Hay Nhất</strong></p>
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-3">
-                                <div class="topMusicItem">
-                                    <div class="itemContainer">
-                                        <div class="item">
-                                            <img src="https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/c/5/f/c/c5fc615c43215c6b72676f42767855ee.jpg"
-                                                alt="" class="img-fluid">
-                                            <div class="opacity hide"></div>
-                                            <div class="actionContainer ">
-                                                <button class="btn btnTool hide"><i
-                                                        class="icon far fa-heart"></i></button>
-                                                <button class="btn btnTool hide"> <i
-                                                        class="icon fas fa-play"></i></button>
-                                                <button class="btn btnTool hide"><i
-                                                        class="icon fas fa-ellipsis-h"></i></button>
-                                            </div>
+                                    </li>
+                                    
+                                    <li class="list_Item" >
+                                        <h6 class="listItem--title">
+                                             Lay la lay
+                                        </h6>
+                                        <span class="Time">4:00</span>
+                                        <div class="listTool" id="album_tool">
+                                            <a id="play_1" href="./src/mp3/Laylalay-JackG5R-7003742.mp3"><i
+                                                    class="fas fa-play"></i></a>
+                                            <a id="play_video" href=""><i class="fas fa-video"></i></a>
+                                            <a href=""><i class="fas fa-download"></i></a>
+                                            <a id="remove_song"><i class="fas fa-trash"></i></a>
                                         </div>
-                                    </div>
+                                    </li>
 
-
-                                    <p class="itemTitle"><strong>Top 100 Nhạc Rap Việt Nam Hay Nhất</strong></p>
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-3">
-                                <div class="topMusicItem">
-                                    <div class="itemContainer">
-                                        <div class="item">
-                                            <img src="https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/e/9/f/6/e9f6c74d1651a3dcf0be456822f1eefd.jpg"
-                                                alt="" class="img-fluid">
-                                            <div class="opacity hide"></div>
-                                            <div class="actionContainer ">
-                                                <button class="btn btnTool hide"><i
-                                                        class="icon far fa-heart"></i></button>
-                                                <button class="btn btnTool hide"> <i
-                                                        class="icon fas fa-play"></i></button>
-                                                <button class="btn btnTool hide"><i
-                                                        class="icon fas fa-ellipsis-h"></i></button>
-                                            </div>
+                                    <li class="list_Item" >
+                                        <h6 class="listItem--title">
+                                             Lay la lay
+                                        </h6>
+                                        <span class="Time">4:00</span>
+                                        <div class="listTool" id="album_tool">
+                                            <a id="play_1" href="./src/mp3/Laylalay-JackG5R-7003742.mp3"><i
+                                                    class="fas fa-play"></i></a>
+                                            <a id="play_video" href=""><i class="fas fa-video"></i></a>
+                                            <a href=""><i class="fas fa-download"></i></a>
+                                            <a id="remove_song"><i class="fas fa-trash"></i></a>
                                         </div>
-                                    </div>
-
-
-                                    <p class="itemTitle"><strong>Top 100 Nhạc Rap Việt Nam Hay Nhất</strong></p>
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-3">
-                                <div class="topMusicItem">
-                                    <div class="itemContainer">
-                                        <div class="item">
-                                            <img src="https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/2/d/d/0/2dd000bcd585f01edd235c0c3f21c2f9.jpg"
-                                                alt="" class="img-fluid">
-                                            <div class="opacity hide"></div>
-                                            <div class="actionContainer ">
-                                                <button class="btn btnTool hide"><i
-                                                        class="icon far fa-heart"></i></button>
-                                                <button class="btn btnTool hide"> <i
-                                                        class="icon fas fa-play"></i></button>
-                                                <button class="btn btnTool hide"><i
-                                                        class="icon fas fa-ellipsis-h"></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <p class="itemTitle"><strong>Top 100 Nhạc Rap Việt Nam Hay Nhất</strong></p>
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-3">
-                                <div class="topMusicItem">
-                                    <div class="itemContainer">
-                                        <div class="item">
-                                            <img src="https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/d/c/5/0/dc5063c848cf0bf33a62f157544f4299.jpg"
-                                                alt="" class="img-fluid">
-                                            <div class="opacity hide"></div>
-                                            <div class="actionContainer ">
-                                                <button class="btn btnTool hide"><i
-                                                        class="icon far fa-heart"></i></button>
-                                                <button class="btn btnTool hide"> <i
-                                                        class="icon fas fa-play"></i></button>
-                                                <button class="btn btnTool hide"><i
-                                                        class="icon fas fa-ellipsis-h"></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <p class="itemTitle"><strong>Top 100 Nhạc Rap Việt Nam Hay Nhất</strong></p>
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-3">
-                                <div class="topMusicItem">
-                                    <div class="itemContainer">
-                                        <div class="item">
-                                            <img src="https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/d/c/5/0/dc5063c848cf0bf33a62f157544f4299.jpg"
-                                                alt="" class="img-fluid">
-                                            <div class="opacity hide"></div>
-                                            <div class="actionContainer ">
-                                                <button class="btn btnTool hide"><i
-                                                        class="icon far fa-heart"></i></button>
-                                                <button class="btn btnTool hide"> <i
-                                                        class="icon fas fa-play"></i></button>
-                                                <button class="btn btnTool hide"><i
-                                                        class="icon fas fa-ellipsis-h"></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <p class="itemTitle"><strong>Top 100 Nhạc Rap Việt Nam Hay Nhất</strong></p>
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-3">
-                                <div class="topMusicItem">
-                                    <div class="itemContainer">
-                                        <div class="item">
-                                            <img src="https://photo-resize-zmp3.zadn.vn/w320_r1x1_jpeg/cover/d/c/5/0/dc5063c848cf0bf33a62f157544f4299.jpg"
-                                                alt="" class="img-fluid">
-                                            <div class="opacity hide"></div>
-                                            <div class="actionContainer ">
-                                                <button class="btn btnTool hide"><i
-                                                        class="icon far fa-heart"></i></button>
-                                                <button class="btn btnTool hide"> <i
-                                                        class="icon fas fa-play"></i></button>
-                                                <button class="btn btnTool hide"><i
-                                                        class="icon fas fa-ellipsis-h"></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <p class="itemTitle"><strong>Top 100 Nhạc Rap Việt Nam Hay Nhất</strong></p>
-                                </div>
+                                    </li>
+                                </ol>
                             </div>
                         </div>
                     </div>
-                    <!-- end music for u -->
+
+                </div>
+                <!-- end phần linh làm -->
+
+
+<!-- 
+
+                <div class="audioContainer text-center fixed-bottom">
+                    <audio src="" controls id="audioPlayer">
+                        Sorry, your browser doesn't support html5!
+                    </audio>
+                </div> -->
+
+
+                <!-- end phần linh làm -->
 
 
 
             </div>
-
-            <!-- playlist -->
-            <!-- <ul id="playlist">
-                    <li><a href="./src/mp3/Laylalay-JackG5R-7003742.mp3">lay la lay</a></li>
-                    <li><a href="./src/mp3/LoSayByeLaBye-LemeseChangg-6926941.mp3">lỡ say bye là bye</a></li>
-                    <li><a href="./src/mp3/SaiGonDauLongQua-HuaKimTuyenHoangDuyen-6992977.mp3">sài gòn đau lòng
-                            quá</a></li>
-                </ul> -->
-
-            
-
-            <!-- end phần linh làm -->
-
-
-
         </div>
+        <!--end Content Wrapper -->
     </div>
-    <!--end Content Wrapper -->
-    </div>
 
 
     </div>
-    <script>
-        // loads the audio player
-        audioPlayer();
-        function audioPlayer() {
-            var currentSong = 0;
-            $("#audioPlayer")[0].src = $("#playlist li a")[0];
-            // $("#audioPlayer")[0].play();
-            $("#playlist li a").click(function (e) {
-                e.preventDefault();
-                $("#audioPlayer")[0].src = this;
-                $("#audioPlayer")[0].play();
-                $("#playlist li").removeClass("current-song");
-                currentSong = $(this).parent().index();
-                $(this).parent().addClass("current-song");
-            });
 
-            $("#audioPlayer")[0].addEventListener("ended", function () {
-                currentSong++;
-                if (currentSong == $("#playlist li a").length)
-                    currentSong = 0;
-                $("#playlist li").removeClass("current-song");
-                $("#playlist li:eq(" + currentSong + ")").addClass("current-song");
-                $("#audioPlayer")[0].src = $("#playlist li a")[currentSong].href;
-                $("#audioPlayer")[0].play();
-            });
-        }
-
-        // pre show - next show
     </script>
     <script>
         $(".next_show").hide();
@@ -619,6 +476,21 @@
         $("#next").click(function () {
             $(".next_show").show(); $(".pre_show").hide();
         });
+
+        // var cons = $('.listSong--special').html();
+        // $('.listSong--special').remove();
+        // var i = 1;
+        // $("#btn_add").click(function () {
+        //     var nameSong = $("#addnewsong_box").val();
+        //     $('#album_1').append(cons).html();
+        //     $('#list_Item:last-child').removeClass("class_hide");
+        //     $("#list_Item:last-child .listItem--title").text(function (origText) {
+        //         return i + ". " + nameSong + "";
+        //     });
+        //     i++;
+        // });
+        
+
 
     </script>
     <script src="js/index.js"></script>
