@@ -59,7 +59,6 @@
     top: 0;
     left: 0;
     background-color: rgba(0,0,0,0.5);
-
     z-index: 1;
 }
 
@@ -269,8 +268,4 @@ display: block;
 width: 560px!important; 
 height: 320px!important; 
 margin-top: 20px;
-}
-
-label{
-    color: #F0F0F2;
 }
