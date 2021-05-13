@@ -1,0 +1,290 @@
+:root{
+    /* màu chủ đạo */
+    --primary-1: #4C2CBF;
+    --primary-2: #9B9109;
+    --primary-3: #F0F0F2;
+    --primary-4: #6B8DF2;
+    --primary-5: #94C6F2;
+}
+/* container */
+#content{
+    background-color: var(--primary-4);
+}
+/* item */
+.topMusicItem .itemTitle{
+    width: 175px;
+    font-size: 14px;
+    color: var(--primary-3);
+}
+.topMusicTitle{
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--primary-3);
+    text-decoration: underline;
+}
+.itemContainer{
+    display: block;
+    max-height: 182px;
+    max-width: 182px;
+    background-color: #9B9109;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.itemContainer:hover {
+    cursor: pointer;
+}
+.itemContainer .item {
+    line-height: 0;
+    height: 0;
+    padding-bottom: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.item img{
+    height: 182px;
+    width: 182px;  
+    transition: transform .7s; 
+}
+.itemContainer:hover img {
+    transform: scale(1.1) translateZ(0);
+}
+
+.opacity{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+
+    z-index: 1;
+}
+
+.btnTool{
+    line-height: 0;
+    font-size: 20px;
+    box-shadow: none;
+    background-color: transparent;
+    color: var(--primary-3);
+    z-index: 3;
+}
+.btnTool:hover{
+    box-shadow: none;
+}
+.actionContainer{
+  position: absolute;
+  top: 40%;
+  display: flex;
+}
+.hide{display: none;}
+
+.itemContainer:hover  .hide {
+    display: block;
+  }
+/*albumImg  */
+.albumContainerLeft{
+    color: var(--primary-3);
+}
+.albumContainerLeft button{
+    color: var(--primary-3);
+}
+.albumContainerLeft button:hover{
+    color: var(--primary-3);
+    opacity: 0.7;
+    box-shadow: none;
+}
+.albumImg{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 40px auto;
+}
+.albumImg img{
+    animation: xoayvong 10s linear 0s infinite;
+    -webkit-animation: xoayvong 10s linear 0s infinite;
+    -moz-animation: xoayvong 10s linear 0s infinite;
+    -o-animation: xoayvong 10s linear 0s infinite; 
+}
+.albumDetail{
+    font-size: 12px;
+}
+@-webkit-keyframes xoayvong{
+    from{
+        -webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+    }
+    to{
+        -webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+    }
+}
+/* Standard syntax */ 
+@keyframes xoayvong {
+    from{
+        -webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+    }
+    to{
+        -webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+    }
+}
+
+/* playlist */
+ .audioContainer{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.audioContainer audio{
+    width: 90%;
+    height: 40px;
+}
+#playlist li a{
+    color:black;
+    text-decoration: none;
+}
+#playlist .current-song a{
+    color:blue;
+}
+
+#album_1{
+    padding: 10px 0 0 40px;
+}
+.listSong{
+    width: 100%;
+    padding: 10px; 
+    margin-bottom: 1rem;
+    color: var(--primary-3);
+    font-size: 20px;
+    list-style-position: inside;
+}
+.list_Item{
+    border-bottom: 1px solid #cdcdcd;
+    height: 50px;
+    padding-top: 10px;
+}
+.listItem--title{
+    width: 60%;
+    display: inline-block;   
+    color: var(--primary-3);
+    font-size: 20px;
+ }
+
+.Time{width: 2%;
+    color: var(--primary-3);
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.listTool{
+    width: 38%;
+    display: inline;
+    color: var(--primary-3);
+}
+
+.listTool a i{
+    color: var(--primary-3);
+    margin-left: 10px;
+}
+
+
+/* thêm bài hát */
+.addSong {
+    color: var(--primary-3);
+    font-size: 20px;
+}
+.addNewSong{
+    margin-left: auto;
+}
+.addNewSong #addnewsong_box{
+    border-radius: 20px;
+    outline: none;
+    padding: 5px 14px;
+    border: 1px solid #cdcdcd;
+}
+#btn_add{border-radius: 8px;}
+
+#remove_song{
+    margin-left: 20px;
+}
+
+.class_hide{
+    visibility: hidden;
+}
+
+/* gallery  left*/
+    /* log out */
+.galleryLeft{
+    color: var(--primary-3);
+
+}
+
+.userProflie img{
+    border-radius: 50%;
+    margin-bottom: 20px;
+    height: 100px;
+    width: 100px;
+}
+    /* nav */
+.galleryLeft-content-nav {
+    list-style-type: none;
+    border: 1px solid #cdcdcd;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 5px 20px;
+}
+
+.galleryLeft-content-nav li{
+    display: inline-block;
+    margin: 5px;
+}
+/* gallery  right*/
+
+.galleryRight{
+    border-left: 1px solid #cdcdcd;
+    margin-bottom: 1rem;
+}
+.listContainerUserHeader{
+    align-items: center;
+    padding: 10px 40px;
+}
+.listContainerUserBtn i{
+    margin-right: 20px;
+}
+
+/* Phần này là Phong CSS */
+/* chỉnh sửa avt */
+.avtUser
+  {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: block; margin-left: auto; margin-right: auto;
+    margin-top: 20px;
+    border: solid 2px white;
+  }
+  /*CSS cho User name*/
+  .userName
+  {
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+  }
+  /*CSS cho thanh sidebar*/
+  hr.rounded {
+    border-top: 8px solid #fff;
+    border-radius: 5px;
+  }
