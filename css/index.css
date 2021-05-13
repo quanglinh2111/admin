@@ -32,9 +32,9 @@
     border-radius: 4px;
 }
 
-.itemContainer:hover {
+/* .itemContainer:hover {
     cursor: pointer;
-}
+} */
 .itemContainer .item {
     line-height: 0;
     height: 0;
@@ -212,7 +212,11 @@
     padding: 5px 14px;
     border: 1px solid #cdcdcd;
 }
-#btn_add{border-radius: 8px;}
+#btn_add{
+    border-radius: 8px;
+    width: 45px;
+    height: 45px;
+}
 
 #remove_song{
     margin-left: 20px;
@@ -265,7 +269,18 @@
 /* dashbord */
 #pieChart{
 display: block; 
-width: 560px!important; 
-height: 320px!important; 
+width: 540px!important; 
+height: 300px!important; 
 margin-top: 20px;
+}
+/* nút xóa */
+.actionRemoveContain{
+    text-align: right;
+}
+#actionRemove{
+    border-radius: 8px;
+    width: 45px;
+    height: 45px;
+    margin-top: 10px;
+   
 }
